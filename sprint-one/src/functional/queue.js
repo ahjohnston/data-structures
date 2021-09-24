@@ -10,15 +10,15 @@ var Queue = function () {
     //add the new value at key 0; bump down all other key/values
     var newStorage = {};
     newStorage[0] = value;
-    console.log('newS ', newStorage);
+    // console.log('newS ', newStorage);
     for (var i = 0; i < Object.keys(storage).length; i++) {
       newStorage[i + 1] = storage[i];
-      console.log('newStorage i + 1 ', newStorage[i + 1]);
-      console.log('storage[i] ', storage[i]);
+      // console.log('newStorage i + 1 ', newStorage[i + 1]);
+      // console.log('storage[i] ', storage[i]);
     }
     storage = newStorage;
-    console.log('enqueue result ', storage);
-    console.log('newStorage ', newStorage);
+    // console.log('enqueue result ', storage);
+    // console.log('newStorage ', newStorage);
     return storage;
   };
 
@@ -26,7 +26,7 @@ var Queue = function () {
   //problem! whenever enqueue() is invoked, the previously dequeued item is forgotten and is now undefined. Why?
   someInstance.dequeue = function () {
     //remove the last key/value
-    var dequeued = Object.values(storage)[Object.keys(storage).length - 1];
+    var dequeued = storage[Object.keys(storage).length - 1];
     delete storage[Object.keys(storage).length - 1];
     return dequeued;
     // var newStorage = {};
