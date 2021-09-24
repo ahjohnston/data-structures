@@ -32,9 +32,9 @@ stackMethods.push = function (value) {
 ////returns the popped value
 stackMethods.pop = function () {
   var lastIndex = this.length - 1;
-  console.log('this ', this);
+  // console.log('this ', this);
   var popped = this[lastIndex];
-  console.log('popped ', popped);
+  // console.log('popped ', popped);
   delete this.lastIndex;
   if (this.length > 0) {
     this.length--;
@@ -50,7 +50,7 @@ stackMethods.size = function () {
 
 var newStack = Stack();
 newStack.push('a');
-console.log('pop ', newStack.pop());
+// console.log('pop ', newStack.pop());
 
 
 
