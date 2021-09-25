@@ -4,9 +4,13 @@ var LinkedList = function() {
   list.tail = null;
 
   list.addToTail = function(value) {
+    //make current tail point to new tail
+    //change "tail" marker to the new tail
   };
 
   list.removeHead = function() {
+    //change "head" marker to the value that the current head points to
+    //remove pointer from current head
   };
 
   list.contains = function(target) {
