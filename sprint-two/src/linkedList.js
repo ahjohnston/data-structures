@@ -1,25 +1,25 @@
-var LinkedList = function() {
+var LinkedList = function () {
   var list = {};
   list.head = null;
   list.tail = null;
 
-  list.addToTail = function(value) {
+  list.addToTail = function (value) {
     //make current tail point to new tail
     //change "tail" marker to the new tail
   };
 
-  list.removeHead = function() {
+  list.removeHead = function () {
     //change "head" marker to the value that the current head points to
     //remove pointer from current head
   };
 
-  list.contains = function(target) {
+  list.contains = function (target) {
   };
 
   return list;
 };
 
-var Node = function(value) {
+var Node = function (value) {
   var node = {};
 
   node.value = value;
